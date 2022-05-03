@@ -6,7 +6,7 @@ services:
         image: collabora/code
         container_name: collabora
         ports:
-            - "9980:9980"
+            - "8200:9980"
         restart: unless-stopped
         environment:
             - extra_params=--o:ssl.enable=false
