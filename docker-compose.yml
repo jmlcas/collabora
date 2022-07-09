@@ -10,5 +10,9 @@ services:
         restart: unless-stopped
         environment:
             - extra_params=--o:ssl.enable=false
+            - username=admin
+            - password=p4ssw0rd
+            - dictionaries=es_ES 
+            - TZ=Europe/Madrid            
             
             
