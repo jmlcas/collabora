@@ -8,10 +8,8 @@ services:
         restart: unless-stopped
         environment:
             - extra_params=--o:ssl.enable=false
-            - domain=localhost  # 192.168.2.111 | example.com            
+            - domain=localhost  # 192.168.2.111 | example.com         
             - username=User
             - password=p4ssw0rd
-            - dictionaries=es_ES 
-            - TZ=Europe/Madrid            
-            
-            
+            - dictionaries=es_ES
+            - TZ=Europe/Madrid           
