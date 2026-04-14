@@ -12,4 +12,4 @@ services:
             - username=User
             - password=p4ssw0rd
             - dictionaries=es_ES
-            - TZ=Europe/Madrid           
+            - TZ=Europe/Madrid
