@@ -7,12 +7,9 @@ services:
             - "9980:9980"
         restart: unless-stopped
         environment:
-            - extra_params=--o:ssl.enable=false --o:ssl.ssl_verification=true 
-            - domain=localhost  # 192.168.2.111 | example.com         
+            - extra_params=--o:ssl.enable=false
+            - domain=localhost  # 192.168.2.111 | example.com
             - username=User
             - password=p4ssw0rd
             - dictionaries=es_ES
-            - TZ=Europe/Madrid
-        cap_add:
-          - MKNOD
-        command: ["bash", "-c", "coolconfig generate-proof-key ; /start-collabora-online.sh"]       
+            - TZ=Europe/Madrid    
